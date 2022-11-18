@@ -3,14 +3,15 @@
   <!--NavBar-->
 <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
   <div class="container flex flex-wrap items-center justify-between mx-auto">
-  <a href="https://doughrise.co/" class="flex items-center">
+  <a href="https://doughrise.co/" class=" flex items-center">
       <img src="https://media-exp1.licdn.com/dms/image/C560BAQHXTzMpa0XEFA/company-logo_200_200/0/1621269385894?e=1676505600&v=beta&t=-kYKH14W-sgS0hc8j-0YUyj8FG9_guMp0MhyMJIxZL8" class="h-6 mr-3 sm:h-9 rounded" alt="DoughRise Logo" />
-      <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">DoughRise</span>
+      <span class=" self-center text-xl font-semibold whitespace-nowrap dark:text-white">DoughRise</span>
   </a>
   <div class="flex items-center md:order-2">
       <button type="button" class="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
         <img class="w-8 h-8 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6sGddmMZFZCqb7aJFx5eV-8FGj2gJWz7abGntj8IuyYdAv7W2HEJyi5WY3xbpLLzf-Zg&usqp=CAU" alt="user photo">
       </button>
+      <h1 class="p-2 text-gray-700 dark:text-gray-400">User Name</h1>
       <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
         <div class="px-4 py-3">
         </div>
@@ -107,23 +108,90 @@
 </aside>
 
 <!--Cards--> 
-<a class="absolute top-11 right-11 m-11 p-6 max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">April Budget</h5>
-  <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+<a class="absolute top-16 right-11 m-11 p-6 w-96 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Food</h5>
+  <p class="font-normal text-gray-700 dark:text-gray-400">Spent 10% of $1000</p>
+  <p class="text-right font-normal text-gray-700 dark:text-gray-400">$100</p>
   <div class="w-full h-86 bg-gray-200 rounded-full dark:bg-gray-700">
-  <div class="h-4 bg-blue-600 rounded-full dark:bg-blue-500" style="width: 75%"></div>
+  <div class="h-2.5 bg-blue-600 rounded-full dark:bg-blue-500" style="width: 55%"></div>
+</div>
+</a>
+<a class="absolute top-56 right-11 m-11 p-6 w-96 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Education</h5>
+  <p class="font-normal text-gray-700 dark:text-gray-400">Spent 10% of $1000</p>
+  <p class="text-right font-normal text-gray-700 dark:text-gray-400">$100</p>
+  <div class="w-full h-86 bg-gray-200 rounded-full dark:bg-gray-700">
+  <div class="h-2.5 bg-blue-600 rounded-full dark:bg-blue-500" style="width: 55%"></div>
+</div>
+</a>
+<a class="absolute bottom-40 right-11 m-11 p-6 w-96 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Transportation</h5>
+  <p class="font-normal text-gray-700 dark:text-gray-400">Spent 10% of $1000</p>
+  <p class="text-right font-normal text-gray-700 dark:text-gray-400">$100</p>
+  <div class="w-full h-86 bg-gray-200 rounded-full dark:bg-gray-700">
+  <div class="h-2.5 bg-blue-600 rounded-full dark:bg-blue-500" style="width: 55%"></div>
+</div>
+</a>
+<a class="absolute bottom-0.5 right-11 m-11 p-6 w-96 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Healthcare</h5>
+  <p class="font-normal text-gray-700 dark:text-gray-400">Spent 10% of $1000</p>
+  <p class="text-right font-normal text-gray-700 dark:text-gray-400">$100</p>
+  <div class="w-full h-86 bg-gray-200 rounded-full dark:bg-gray-700">
+  <div class="h-2.5 bg-blue-600 rounded-full dark:bg-blue-500" style="width: 55%"></div>
+</div>
+</a>
+<a class="absolute bottom-80 right-11 m-11 p-6 w-96 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Shopping</h5>
+  <p class="font-normal text-gray-700 dark:text-gray-400">Spent 10% of $1000</p>
+  <p class="text-right font-normal text-gray-700 dark:text-gray-400">$100</p>
+  <div class="w-full h-86 bg-gray-200 rounded-full dark:bg-gray-700">
+  <div class="h-2.5 bg-blue-600 rounded-full dark:bg-blue-500" style="width: 55%"></div>
+</div>
+</a>
+<a class="absolute bottom-20 left-60 m-20 p-6 w-96 h-64 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">April Budget</h5>
+  <p class="text-2xl font-bold p-3 text-gray-700 dark:text-gray-400">$2000</p>
+  <p class="text-right text-2xl text-gray-700 dark:text-gray-400">$800</p>
+  <div class="w-full h-86 bg-gray-200 rounded-full dark:bg-gray-700">
+  <div class="h-4 bg-blue-600 rounded-full dark:bg-blue-500" style="width: 75%">
+  <p class="p-4 text-sm text-gray-700 dark:text-gray-400">You spent $1,200 of $2,000</p>
+</div>
+</div>
+</a>
+<a class="absolute top-20 left-60 m-20 p-6 w-96 h-64 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">March Budget</h5>
+  <p class=" text-2xl font-bold p-3 text-gray-700 dark:text-gray-400">$2000</p>
+  <p class="text-right text-2xl text-gray-700 dark:text-gray-400">$800</p>
+  <div class="w-full h-86 bg-gray-200 rounded-full dark:bg-gray-700">
+  <div class="h-4 bg-blue-600 rounded-full dark:bg-blue-500" style="width: 75%">
+  <p class="p-4 text-sm text-gray-700 dark:text-gray-400">You spent $1,200 of $2,000</p>
+</div>
 </div>
 </a>
 
-<a class="absolute bottom-20 right-11 m-11 p-6 max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">April Budget</h5>
-  <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-  <div class="w-full h-86 bg-gray-200 rounded-full dark:bg-gray-700">
-  <div class="h-4 bg-blue-600 rounded-full dark:bg-blue-500" style="width: 75%"></div>
-</div>
-</a>
+<!--Footer-->
+<footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://doughrise.co/" class="hover:underline">DoughRise™</a>. All Rights Reserved.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+        <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+        </li>
+        <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+        </li>
+        <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline">Contact</a>
+        </li>
+    </ul>
+</footer>
+
 
 </div>
+<router-view />
 </template>
 
 
