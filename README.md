@@ -1,24 +1,12 @@
-# dough-rise
+# DoughRise
 
-## Project setup
-```
-npm install
-```
+## Deployed Application
+https://dough-rise-54a3d.web.app/
+  
+<h2 align="left">Languages and Tools</h2>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- Vue.js
+- Javascript
+- FireBase
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Preview
