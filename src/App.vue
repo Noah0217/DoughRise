@@ -1,6 +1,6 @@
-<template>
+<template>   
 <div class="dark:bg-gray-700">  
-  <!--NavBar-->
+<!--NavBar-->
 <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
   <div class="container flex flex-wrap items-center justify-between mx-auto">
   <a href="https://doughrise.co/" class=" flex items-center">
@@ -21,14 +21,18 @@
     <input type="search" class="form-control relative flex-auto min-w-0 block w-full px-9 py-0.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-900 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
   </div>
   </div>
+<!--Routes-->
+  <router-link to="/register"> <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Register</button> </router-link>
+  <router-link to="/sign-in"> <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Log In</button> </router-link>
+  <span v-if="isLoggedIn"> 
+  <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" @click="handleSignOut"> Logout </button></span>
 </nav>
-
 <!--SideBar-->
 <aside class="w-64" aria-label="Sidebar">
    <div class="overflow-y-auto py-5 px-5 bg-gray-50 rounded dark:bg-gray-800">
       <ul class="space-y-5">
          <li>
-            <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+            <a href="/" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
               <svg class="w-6 h-6" data-darkreader-inline-stroke="" fill="none" stroke="currentColor" style="--darkreader-inline-stroke:currentColor;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
                <span class="flex-1 ml-3 whitespace-nowrap font-bold font-mono text-lg">Home</span>
             </a>
@@ -58,16 +62,16 @@
             </a>
          </li>
          <li>
-            <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+            <a href="" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z" clip-rule="evenodd"></path></svg>
-               <span class="flex-1 ml-3 whitespace-nowrap font-bold font-mono text-lg">Sign In</span>
+               <span class="flex-1 ml-3 whitespace-nowrap font-bold font-mono text-lg">Budgets</span>
             </a>
          </li>
          <li>
-            <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+            <a href="" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clip-rule="evenodd"></path></svg>
-               <span class="flex-1 ml-3 whitespace-nowrap font-bold font-mono text-lg">Sign Up</span>
-            </a>
+               <span class="flex-1 ml-3 whitespace-nowrap font-bold font-mono text-lg">Cards</span>
+            </a> 
          </li>
       </ul>
       <ul class="pt-4 mt-4 space-y-2 border-t border-gray-200 dark:border-gray-700">
@@ -106,7 +110,6 @@
       </ul>
    </div>
 </aside>
-
 <!--Cards--> 
 <a class="absolute top-16 right-11 m-11 p-6 w-96 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Food</h5>
@@ -168,7 +171,6 @@
 </div>
 </div>
 </a>
-
 <!--Footer-->
 <footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
     <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://doughrise.co/" class="hover:underline">DoughRise™</a>. All Rights Reserved.
@@ -188,12 +190,29 @@
         </li>
     </ul>
 </footer>
-
-
 </div>
-<router-view />
+<router-view/>
 </template>
-
-
+<!--JS logic if an user is signed in presents Logout button-->
+<script setup>
+import { ref,  } from 'vue' // used for conditional rendering
+import { getAuth,onAuthStateChanged, signOut } from 'firebase/auth'
+import { useRouter } from 'vue-router'
+const router = useRouter()
+const isLoggedIn = ref(true)
+// runs after firebase is initialized
+onAuthStateChanged(getAuth(),function(user) {
+    if (user) {
+      isLoggedIn.value = true // if we have a user
+    } else {
+      isLoggedIn.value = false // if we do not
+    }
+})
+const handleSignOut = () => {
+  signOut(getAuth())
+  router.push('/')
+}
+</script>
 
 <style src="./assets/tailwind.css"/>
+
